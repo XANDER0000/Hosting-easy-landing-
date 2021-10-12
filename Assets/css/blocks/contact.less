@@ -1,0 +1,87 @@
+// main: ../style.less
+
+.contact {
+    margin-bottom: 100px;
+
+    @media (max-width: 1040px) {
+        margin-bottom: 70px;
+    }
+}
+
+.contact__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contact__header_subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 3px;
+    color: #ED3A4E;
+    margin-bottom: 15px;
+}
+
+.contact__header_title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: -2px;
+    color: #333;
+    margin-bottom: 46px;
+    max-width: 689px;
+
+    @media (max-width: 1040px) {
+       font-size: 40px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 30px;
+    }
+}
+
+.contact__header_text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #333;
+    max-width: 770px;
+}
+
+.contact__buttons {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 420px) {
+        flex-direction: column;
+        align-items: center;
+
+        .btn__contact {
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.btn__contact {
+    margin-right: 30px;
+
+    @media (max-width: 420px) {
+        margin: 0;
+    }
+
+    .btn {
+        min-width: 170px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

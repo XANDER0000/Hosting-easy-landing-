@@ -1,0 +1,53 @@
+// compress: true
+
+@import "vars";
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Trispace', sans-serif;
+
+    font-size: 16px;
+    color: @black;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+h1, h2, h3, h4, h4, h5 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks ======================*/
+@import "blocks/header.less";
+@import "blocks/container.less";
+@import "blocks/btn.less";
+@import "blocks/intro.less";
+@import "blocks/bitmap.less";
+@import "blocks/sections.less";
+@import "blocks/features.less";
+@import "blocks/service.less";
+@import "blocks/register.less";
+@import "blocks/about.less";
+@import "blocks/map.less";
+@import "blocks/testimonials.less";
+@import "blocks/FAQ.less";
+@import "blocks/blog.less";
+@import "blocks/price.less";
+@import "blocks/contact.less";
+@import "blocks/footer.less";
+
+@import "helpers";

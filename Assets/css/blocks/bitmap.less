@@ -1,0 +1,25 @@
+// main: ../style.less
+
+.bitmap {
+    margin: 55px 0 160px 0;
+
+    @media @mobile {
+        margin: 35px 0 100px 0;
+    }
+}
+
+.bitmap__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}
+
+.bitmap__item {
+    margin: 10px;
+}

@@ -1,0 +1,170 @@
+// main: ../style.less
+
+.price {
+    margin-bottom: 100px;
+
+    @media (max-width: 1040px) {
+        margin-bottom: 70px;
+    }
+}
+
+.price__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.price__header_subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 3px;
+    color: #ED3A4E;
+    margin-bottom: 15px;
+}
+
+.price__header_title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: -2px;
+    color: #333;
+    margin-bottom: 46px;
+    max-width: 689px;
+}
+
+.price__period {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+}
+
+.price__period_link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    color: rgba(51, 51, 51, 0.5);
+    margin-right: 42px;
+    transition: all .2s ease-in-out;
+
+    &:active {
+        color: rgba(51, 51, 51, 0.5);
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover, &:focus, &:active {
+        color: #333;
+    }
+}
+
+.price__content {
+    display: flex;
+    justify-content: center;
+    flex-basis: 25%;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1040px) {
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}
+
+.price__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 370px;
+    height: 528px;
+    background-color: #F3F6FA;
+    padding: 25px 32px 32px 32px;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+    margin: 0 15px;
+
+    &:hover {
+        background-color: #1D46F6;
+
+        .price__card_name {
+            color: #fff;
+        }
+
+        .price__card_rate {
+            color: #fff;
+        }
+
+        .price__card_text {
+            color: #fff;
+        }
+
+        .price__card_service {
+            color: rgba(255, 255, 255, 0.502972);
+        }
+    }
+
+    @media (max-width: 1040px) {
+        margin: 20px 15px;
+    }
+}
+
+.price__card_name {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #333;
+
+    transition: all .2s ease-in-out;
+}
+
+.price__card_rate {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #333;
+    transition: all .2s ease-in-out;
+
+    span {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 114%;
+        letter-spacing: -2px;
+    }
+}
+
+.price__card_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #333;
+    max-width: 306px;
+
+    transition: all .2s ease-in-out;
+}
+
+.price__card_service {
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+    color: rgba(51, 51, 51, 0.5);
+    max-height: 160px;
+    overflow-y: auto;
+
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;
+    }
+}
+
+.btn__card {
+    width: 100%;
+}
